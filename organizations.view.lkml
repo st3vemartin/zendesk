@@ -7,12 +7,6 @@ view: organizations {
     sql: ${TABLE}.id ;;
   }
 
-  dimension_group: created {
-    type: time
-    timeframes: [time, date, week, month]
-    sql: ${TABLE}.created_at ;;
-  }
-
   dimension: details {
     type: string
     sql: ${TABLE}.details ;;

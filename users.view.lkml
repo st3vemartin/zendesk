@@ -17,12 +17,6 @@ view: users {
     sql: ${TABLE}.alias ;;
   }
 
-  dimension_group: created {
-    type: time
-    timeframes: [time, date, week, month]
-    sql: ${TABLE}.created_at ;;
-  }
-
   dimension: details {
     type: string
     sql: ${TABLE}.details ;;

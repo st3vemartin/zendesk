@@ -7,16 +7,6 @@ view: groups {
     sql: ${TABLE}.id ;;
   }
 
-  dimension_group: created_at {
-    type: time
-    timeframes: [time, date, week, month]
-    sql: ${TABLE}.created_at ;;
-  }
-
-  #   - dimension: deleted
-  #     type: yesno
-  #     sql: ${TABLE}.deleted
-
   dimension: name {
     type: string
     sql: ${TABLE}.name ;;
